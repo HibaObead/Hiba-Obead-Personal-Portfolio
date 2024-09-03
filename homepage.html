@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiba Obead-Personal Portfolio</title>
+    <link rel="icon" href="hibasami-preview.png">
+    <!-- Link Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .contanier::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            top: 0;
+            left: 0;
+            background-color: #ff9dcf;
+        }
+
+
+        ul li:hover ul.dropdown {
+            display: block;
+        }
+
+        /* animation */
+
+        .hero .logo,
+        .hero .content .div-text h1,
+        .hero .content .div-text h4,
+        .hero .content .div-text .btn {
+            position: relative;
+            top: 50px;
+            animation: slide-top .5s linear forwards;
+            opacity: 0;
+        }
+
+        .hero .logo {
+            animation-delay: 0.2s;
+        }
+
+        .hero .content .div-text h1 {
+            animation-delay: 0.5s;
+        }
+
+        .hero .content .div-text h4 {
+            animation-delay: 0.9s;
+        }
+
+        .hero .content .div-text .btn {
+            animation-delay: 1.8s;
+        }
+
+        @keyframes slide-top {
+            0% {
+                top: 50px;
+                opacity: 0;
+            }
+
+            100% {
+                top: 0;
+                opacity: 1;
+            }
+        }
+
+        .hero .content .div-text p {
+            position: relative;
+            left: 100px;
+            animation: slide-right .5s linear forwards;
+            animation-delay: 1.3s;
+            opacity: 0;
+        }
+
+        @keyframes slide-right {
+            0% {
+                left: 100px;
+                opacity: 0;
+            }
+
+            100% {
+                left: 0;
+                opacity: 1;
+            }
+        }
+
+        .hero .content .div-img img {
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fade-img .5s linear forwards;
+            animation-delay: 2.1s;
+        }
+
+        @keyframes fade-img {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier"
+        style=" width: 100%;height: 100vh;background-color: #f9f9f9;display: flex;justify-content: center;align-items: center;">
+        <div class="hero" style=" position: relative;z-index: 10;height: 85vh;width: 75%;
+        background: rgba(255, 255, 255, 0.1);backdrop-filter: blur(25px);border: 3px solid #ff9dcf;
+        border-radius: 20px;box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);padding: 0 40px 0 80px;">
+            <!-- Navigation bar -->
+            <nav style=" display: flex;justify-content: space-between;align-items: center;height: 70px;width: 100%;">
+                <a href="#" class="logo" style="    color: #801f82;font-size: 45px;font-weight: bold;">HIBA</a>
+                <ul>
+                    <li style="display: inline-block;list-style: none;margin: 0 30px;">
+                        <a href="#about"
+                            style="    color: #242424;margin-left: 40px;text-transform: capitalize;transition: 0.3s;">Home</a>
+                    </li>
+                    <li style="display: inline-block;list-style: none;margin: 0 30px;"><a href="#resume"
+                            style="    color: #242424;margin-left: 40px;text-transform: capitalize;transition: 0.3s;">Projects</a>
+                    </li>
+                    <li style="display: inline-block;list-style: none;margin: 0 30px;"><a href="#projects"
+                            style="    color: #242424;margin-left: 40px;text-transform: capitalize;transition: 0.3s;">Educations</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="content"
+                style="display: flex;justify-content: space-between;align-items: center;padding-right: 40px;">
+                <div class="div-text" style="width: 40%;">
+                    <h1 style="margin-bottom: 20px;font-size: 50px;color: #fff;">Hi, I'am Hiba</h1>
+                    <h4 style="color: #801f82;font-size: 24px;margin-bottom: 10px;">Front-End Developer</h4>
+                    <p style=" color: #4f4f4f;margin-bottom: 50px;font-size: 18px;">
+                        I'm a Front-End Developer focused on creating visually appealing and user-friendly websites,
+                        blending design with functionality using HTML, CSS, JavaScript and REACT JS .
+                    </p>
+                    <a href="contactus.html" class="btn" target="_blank"
+                        style="  padding: 15px 20px;background-color: #801f82;border: 2px solid #801f82;color: #fff;border-radius: 5px;font-weight: bold;margin-right: 30px;">
+                        Contact Me</a>
+                    <a href="aboutus.html" class="btn" target="_blank"
+                        style="  padding: 15px 20px;background-color: #801f82;border: 2px solid #801f82;color: #fff;border-radius: 5px;font-weight: bold;margin-left: 30px;">
+                        About Me</a>
+                </div>
+                <!--image section-->
+                <section class="div-img" style=" width: 40%;">
+                    <img src="hibasami.jpeg" alt="hiba sami obead image "
+                        style="width: 100%; border-radius: 100%;margin-top: 50px;">
+                </section>
+            </div>
+            <!--social media links-->
+            <section class="soc-link"
+                style="   position: absolute;top: 50%;right: 10px;transform: translateY(-50%);display: flex;flex-direction: column;">
+                <a href=""><i class="fa-brands fa-facebook-f"
+                        style="font-size: 25px;cursor: pointer;color: #801f82;margin-bottom: 20px;transition: 0.4s;"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"
+                        style="font-size: 25px;cursor: pointer;color: #801f82;margin-bottom: 20px;transition: 0.4s;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"
+                        style="font-size: 25px;cursor: pointer;color: #801f82;margin-bottom: 20px;transition: 0.4s;"></i></a>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

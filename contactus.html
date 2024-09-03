@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container form input::placeholder {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"
+        style="min-height: 100vh;background: #08071d;display: flex;justify-content: center;align-items: center;background-color: #ff9dcf; ">
+        <!--contact with me form-->
+        <form
+            style="width: 670px;height: 400px;display: flex;justify-content: center;box-shadow: 20px 20px 50px rgba(0, 0,0,0.5);border-radius: 15px;background: rgba(255,255,255,0.1);backdrop-filter: blur(10px);flex-wrap: wrap;">
+            <h1 style="color: #fff;font-weight: 500;margin-top: 20px;width: 500px;text-align: center;">
+                Contact With Me</h1>
+            <!--inputs area-->
+            <input type="text" id="firstname" placeholder="First Name" required
+                style="width: 290px;height: 40px;padding-left: 10px; outline: none;border: none;font-size: 15px;margin-bottom: 10px;background: none;border-bottom: 2px solid #fff;">
+            <input type="text" id="lastname" placeholder="Last Name" required
+                style="width: 290px;height: 40px;padding-left: 10px; outline: none;border: none;font-size: 15px;margin-bottom: 10px;background: none;border-bottom: 2px solid #fff;margin-left: 20px;">
+            <input type="email" id="email" placeholder="Email" required
+                style="width: 290px;height: 40px;padding-left: 10px; outline: none;border: none;font-size: 15px;margin-bottom: 10px;background: none;border-bottom: 2px solid #fff;">
+            <input type="text" id="mobilenumber" placeholder="Mobile Number" required
+                style="width: 290px;height: 40px;padding-left: 10px; outline: none;border: none;font-size: 15px;margin-bottom: 10px;background: none;border-bottom: 2px solid #fff;margin-left: 20px;">
+            <!--message area-->
+            <h4 style="color: #fff;font-weight: 300;width: 600px;margin-top: 20px;">
+                Type Your Message Here</h4>
+            <!--text message area-->
+            <textarea required style="background: none;border: none;border-bottom: 2px solid #fff;color: #fff;font-size: 15px;font-weight: 200;outline: none;padding: 10px;
+            min-width: 600px;max-width: 600px;min-height: 80px;max-height: 80px;"></textarea>
+            <!--submit area-->
+            <input type="submit" value="send" id="button"
+                style="background-color: #801f82;border: 2px solid #801f82;color: #fff;border-radius: 5px;margin-top: 20px;font-weight: 600;font-size: 20px;width: 100px;margin-right: 500px;margin-bottom: 30px;transition: 0.3s;">
+        </form>
+    </div>
+
+</body>
+
+</html>
